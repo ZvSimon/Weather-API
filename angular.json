@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-test": {
+    "WeatherApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,13 +13,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-test",
+            "outputPath": "dist/weather-app",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -53,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-test:build:production"
+              "browserTarget": "WeatherApp:build:production"
             },
             "development": {
-              "browserTarget": "angular-test:build:development"
+              "browserTarget": "WeatherApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -64,20 +71,31 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-test:build"
+            "browserTarget": "WeatherApp:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "tsconfig.spec.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7a323bc7-eb64-40c2-84fd-4081ea7e1014"
   }
 }
