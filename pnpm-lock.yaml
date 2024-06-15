@@ -41,6 +41,9 @@ importers:
       '@fortawesome/free-solid-svg-icons':
         specifier: ^6.4.0
         version: 6.5.2
+      lucide-angular:
+        specifier: ^0.395.0
+        version: 0.395.0(@angular/common@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3))(rxjs@7.8.1))(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3))
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -2648,6 +2651,12 @@ packages:
   lru-cache@7.18.3:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
+
+  lucide-angular@0.395.0:
+    resolution: {integrity: sha512-8LQvrL+oi+/DG5SKsqIgTi45limOrIalOOxxMQLuFJDdTZK87twOWQmovTu8hc1+a8DAoagIZ1gGy7GjpkleYA==}
+    peerDependencies:
+      '@angular/common': 13.x - 18.x
+      '@angular/core': 13.x - 18.x
 
   magic-string@0.30.0:
     resolution: {integrity: sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==}
@@ -7105,6 +7114,12 @@ snapshots:
       yallist: 4.0.0
 
   lru-cache@7.18.3: {}
+
+  lucide-angular@0.395.0(@angular/common@16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3))(rxjs@7.8.1))(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3)):
+    dependencies:
+      '@angular/common': 16.2.12(@angular/core@16.2.12(rxjs@7.8.1)(zone.js@0.13.3))(rxjs@7.8.1)
+      '@angular/core': 16.2.12(rxjs@7.8.1)(zone.js@0.13.3)
+      tslib: 2.6.3
 
   magic-string@0.30.0:
     dependencies:
