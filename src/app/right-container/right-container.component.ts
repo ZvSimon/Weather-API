@@ -20,6 +20,12 @@ export class RightContainerComponent {
   faFaceFrown = faFaceFrown;
 
   constructor(public weatherService: WeatherService) {}
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.weatherService.cityName = 'Paris';
+    this.weatherService.getData();
+  }
 
   onTodayClick(): void {
     this.weatherService.today = true;

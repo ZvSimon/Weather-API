@@ -20,6 +20,12 @@ export class LeftContainerComponent {
   faCloudRain = faCloudRain;
 
   constructor(public weatherService: WeatherService) {}
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.weatherService.cityName = 'Paris';
+    this.weatherService.getData();
+  }
 
   onSearch(location: string): void {
     if (location) {
