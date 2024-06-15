@@ -46,6 +46,7 @@ export class WeatherService {
   fahrenheit: boolean = false;
 
   constructor(private httpClient: HttpClient) {
+    this.cityName = 'Paris';
     this.getData();
   }
 
