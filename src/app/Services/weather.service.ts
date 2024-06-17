@@ -38,8 +38,8 @@ export class WeatherService {
   currentTime: Date = new Date();
 
   // variables to control tabs
-  today: boolean = false;
-  week: boolean = true;
+  today: boolean = true;
+  week: boolean = false;
 
   //variables to control metric value
   celsius: boolean = true;
